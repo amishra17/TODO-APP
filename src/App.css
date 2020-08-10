@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.container-fluid {
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ced4da;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-inline {
+   justify-content: space-between;
+}
+.fa {
+  color: #6c757d;
+  cursor: pointer;
+}
+.btn-links {
+  font-weight: 800;
+  color: aliceblue;
+  text-align: end;
+}
+.custom-control-input{
+  z-index: 9;
+}
+.header {
+  padding: 1rem 1rem;
+  background-color: #6c757d;
+  color: #ffffff;
+  font-style: oblique;
+}
+.header h5 {
+  font-weight: 800;
+  opacity: 0.8;
+}
+#task {
+  width: 50%;
+}
+#priority {
+  width: 30%;
+}
+.card-body {
+  padding: .6rem;
+}
+.card-body p {
+  padding: 0;
+  margin: 0;
+}
+.add-todo-task {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.add-todo-task .fa {
+  color: #FFFF;
+}
+.todo-task {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.fa-save {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-todo{
+  position: relative;
+}
+.todo-priority {
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  margin-left: 1.5rem;
+  margin-top: .3rem;
+}
+.todo-details {
+  display: flex;
+  font-size: .8rem;
+  font-weight: 800;
+}
+.action-btn {
+  display: flex;
+  justify-content: flex-end;
 }
