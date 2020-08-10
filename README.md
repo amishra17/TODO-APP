@@ -25,7 +25,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-## `Further Implemention`
+## Further Implemention
 
 1. Add Due date to every task.
 2. Add option to add a checklist with every task.
