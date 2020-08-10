@@ -6,7 +6,8 @@ const TodoList = props => {
     const [selected, setSelected] = useState([]);
 
     const handleTodoSelect = id => {
-        setSelected([...selected, id])
+        if(!selected.includes(id)) setSelected([...selected, id]);
+        else setSelected(selected.filter(item => item !== id))
     }
 
     const removeSelected = () => {
